@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap')
+
+@keyframes show_header
+  0% 
+    opacity: 0
+    top: -45px
+  
+  100% 
+    opacity: 1
+    top: 0
+
+
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Nova Square', sans-serif
+  display: flex
+  flex-direction: column
+  align-items: center
+  min-height: 100vh
+
+  background-color: #141414
+
+  color: white
+
+header
+  width: 100%
+
+  background-color: blueviolet
+
+  &.sticky
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    animation: show_header 0.5s ease-out
+
+  .container
+    max-width: 80%
+    margin: 0 auto
+    display: flex
+    align-items: center
+
+
+main
+  flex: 1 1 auto
+  width: 100%
+  max-width: 950px
+
+  background-color: #181818
+
+  box-shadow: 0 0 15px rgba(0, 156, 174, 0.6)
+
+  form, .user
+    padding: 20px 30px
+    max-width: 350px
+
+    display: flex
+    flex-direction: column
+    row-gap: 15px
+
+    background-color: #202020
+
+    h2
+      margin-bottom: 10px
+      color: rgb(0, 156, 174)
+
+  form
+    margin: 20vh auto 0
+
+    input
+      border: none
+      outline: none
+
+      padding: 0.1rem 0.3rem
+
+      font-size: 14px
+
+    .buttons
+      display: flex
+      justify-content: flex-end
+
+      button
+        padding: 0.2rem 0.8rem
+
+        font-family: "Nova Square", sans-serif
+        font-size: 15px
+        font-weight: 700
+
+        color: white
+        background-color: blueviolet
+
+        border: none
+        outline: none
+
+        border-radius: 5px
+
+        cursor: pointer
+
+  .user
+    margin: 60px auto
+
+    .text-section
+      margin-left: 5px
+
+      .header
+        margin-bottom: 5px
+        color: rgb(0, 121, 133)
+
+        &:after
+          content: ':'
+
+      .value
+        margin-left: 5px
+        padding: 3px 5px
+        border-bottom: 1px solid #ccc
+
+p.alert
+  color: orangered
+  font-weight: 700
+
+.radio-buttons
+  display: flex
+  align-items: center
+
+  .item
+    margin: 0 auto
+
+    font-size: 26px
+
+    cursor: pointer
+
+    &.male:hover,
+    &.male.active
+      color: dodgerblue
+
+    &.female:hover,
+    &.female.active
+      color: deeppink
+
+    &.transgender:hover,
+    &.transgender.active
+      color: lawngreen
+
+    &.other:hover,
+    &.other.active
+      color: orangered
+
+
+    input[type="radio"]
+      display: none
+
+.show-pass-btn
+  color: #c8c8c8
+
+  .hide
+    display: none
+
+  &.hide-pass
+    .hide
+      display: inherit
+    .show
+      display: none

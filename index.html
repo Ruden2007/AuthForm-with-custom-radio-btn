@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom - Radiobutton</title>
+
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>RadioButton</h1>
+    </div>
+</header>
+<main>
+    <form>
+        <h2>Sing Up:</h2>
+        <label>
+            login:
+            <input type="text" name="login">
+        </label>
+        <label>
+            password:
+            <input type="password" name="pass">
+            <span class="icon show-pass-btn hide-pass">
+                <i class="show fa-solid fa-eye"></i>
+                <i class="hide fa-solid fa-eye-slash"></i>
+            </span>
+        </label>
+        <div class="radio-buttons">
+            select gender:
+            <div title="male" class="item male active">
+                <i class="icon fa-solid fa-mars"></i>
+                <input type="radio" value="male" name="gender" checked>
+            </div>
+            <div title="female" class="item female">
+                <i class="icon fa-solid fa-venus"></i>
+                <input type="radio" value="female" name="gender">
+            </div>
+            <div title="transgender" class="item transgender">
+                <i class="icon fa-solid fa-transgender"></i>
+                <input type="radio" value="transgender" name="gender">
+            </div>
+            <div title="other" class="item other">
+                <i class="icon fa-solid fa-otter"></i>
+                <input type="radio" value="other" name="gender">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <section class="user">
+        <h2>User:</h2>
+        <div class="text-section login">
+            <div class="header">login</div>
+            <div class="value">Ruden</div>
+        </div>
+        <div class="text-section pass">
+            <div class="header">pass</div>
+            <div class="value">Rf27vfrc2018-</div>
+        </div>
+        <div class="text-section gender">
+            <div class="header">gender</div>
+            <div class="value">Male</div>
+        </div>
+    </section>
+</main>
+<script src="header.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
